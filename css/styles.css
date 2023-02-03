@@ -9,6 +9,7 @@
   --light-color: #f4f4fd;
 
   --main-bg-color: #ffffff;
+  --hero-bg-color: rgba(46, 47, 66, 0.7);
   --border-bg-color: #2e2f42;
   --Our-team-section-bg-color: #f4f4fd;
   --team-card-bg-color: #ffffff;
@@ -162,6 +163,7 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url('../images/people-office-bg.jpg');
+  background-color: var(--hero-bg-color);
 }
 
 .main-title {
