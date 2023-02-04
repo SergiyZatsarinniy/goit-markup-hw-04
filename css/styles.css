@@ -14,6 +14,7 @@
   --Our-team-section-bg-color: #f4f4fd;
   --team-card-bg-color: #ffffff;
   --border-color: #e7e9fc;
+  --icon-employees-bg-color: #4d5ae5;
 }
 
 h1,
@@ -261,6 +262,31 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--icon-employees-bg-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--pressed-state-color);
+}
+
+.social-list-icon {
+  fill: var(--light-color);
+}
+
 .our-team-card {
   background-color: var(--team-card-bg-color);
   flex-basis: calc((100% - 72px) / 4);
@@ -285,6 +311,7 @@ body {
 .our-team-card-text {
   color: var(--secondary-text-color);
   line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 /* FOOTER */
