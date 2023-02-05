@@ -8,6 +8,7 @@
   --third-text-color: #ffffff;
   --light-color: #f4f4fd;
   --icon-success: #31d0aa;
+  --customers-icon-color: #afb1b8;
 
   --main-bg-color: #ffffff;
   --hero-bg-color: rgba(46, 47, 66, 0.7);
@@ -366,7 +367,7 @@ body {
   height: 88px;
   border: 1px solid var(--icon-border-bg-color);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--customers-icon-color);
 }
 
 .customers-list-icon {
