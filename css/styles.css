@@ -7,6 +7,7 @@
   --secondary-text-color: #434455;
   --third-text-color: #ffffff;
   --light-color: #f4f4fd;
+  --icon-success: #31d0aa;
 
   --main-bg-color: #ffffff;
   --hero-bg-color: rgba(46, 47, 66, 0.7);
@@ -15,6 +16,8 @@
   --team-card-bg-color: #ffffff;
   --border-color: #e7e9fc;
   --icon-employees-bg-color: #4d5ae5;
+  --icon-footer-bg-color: rgba(255, 255, 255, 0.1);
+  --icon-border-bg-color: #8e8f99;
 }
 
 h1,
@@ -39,6 +42,14 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -49,14 +60,6 @@ body {
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.container {
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .link {
@@ -290,6 +293,9 @@ body {
 .our-team-card {
   background-color: var(--team-card-bg-color);
   flex-basis: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-section-title {
@@ -312,6 +318,42 @@ body {
   color: var(--secondary-text-color);
   line-height: 1.5;
   margin-bottom: 8px;
+}
+
+/* Customers */
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.customers-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--icon-border-bg-color);
+  border-radius: 4px;
+}
+
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border-color: var(--pressed-state-color);
 }
 
 /* FOOTER */
@@ -338,6 +380,37 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-top: 16px;
+}
+
+.social-media-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--third-text-color);
+  margin-bottom: 16px;
+}
+
+.footer-wrap {
+  display: flex;
+}
+
+.social {
+  margin-left: 120px;
+}
+
+.social-list-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--icon-footer-bg-color);
+}
+
+.social-list-link-footer:hover,
+.social-list-link-footer:focus {
+  background-color: var(--icon-success);
 }
 
 /* MAIN PORTFOLIO */
