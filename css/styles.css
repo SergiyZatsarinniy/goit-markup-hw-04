@@ -333,6 +333,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .customers-list {
@@ -349,11 +350,17 @@ body {
   height: 88px;
   border: 1px solid var(--icon-border-bg-color);
   border-radius: 4px;
+  color: #afb1b8;
+}
+
+.customers-list-icon {
+  fill: currentColor;
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
   border-color: var(--pressed-state-color);
+  color: var(--pressed-state-color);
 }
 
 /* FOOTER */
