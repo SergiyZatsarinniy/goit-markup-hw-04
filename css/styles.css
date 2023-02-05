@@ -214,6 +214,22 @@ body {
   gap: 24px;
 }
 
+.our-advanages-icon {
+  box-sizing: content-box;
+  padding-left: 102px;
+  padding-right: 102px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.our-advantages-item {
+  background-color: var(--light-color);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+}
+
 .our-advantages-section-titles {
   font-size: 20px;
   font-weight: 500;
@@ -377,6 +393,7 @@ body {
 .logo-footer {
   color: var(--light-color);
 }
+
 .logo-footer-margin {
   margin-right: 0;
 }
