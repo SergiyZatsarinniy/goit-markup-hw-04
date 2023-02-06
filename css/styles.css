@@ -19,6 +19,7 @@
   --icon-employees-bg-color: #4d5ae5;
   --icon-footer-bg-color: rgba(255, 255, 255, 0.1);
   --icon-border-bg-color: #8e8f99;
+  --border-project-card-color: #f4f4fd;
 }
 
 h1,
@@ -417,6 +418,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-top: 16px;
+  margin-right: 0px;
 }
 
 .social-media-title {
@@ -429,10 +431,8 @@ body {
 
 .footer-wrap {
   display: flex;
-}
-
-.social {
-  margin-left: 120px;
+  align-items: baseline;
+  gap: 120px;
 }
 
 .social-list-link-footer {
@@ -500,6 +500,17 @@ body {
 
 .project-card {
   flex-basis: calc((100% - 48px) / 3);
+}
+
+.link {
+  display: block;
+  height: 100%;
+}
+
+.portfolio-card-link:hover,
+.portfolio-card-active:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card-content-wrapper {
