@@ -225,20 +225,23 @@ body {
   gap: 24px;
 }
 
-.our-advanages-icon {
-  box-sizing: content-box;
-  padding-left: 102px;
-  padding-right: 102px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+.our-advantages-list {
+  display: flex;
+  gap: 24px;
 }
 
 .our-advantages-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--light-color);
   border-radius: 4px;
   width: 264px;
   height: 112px;
   margin-bottom: 8px;
+}
+.our-advantages-wrap {
+  width: 264px;
 }
 
 .our-advantages-section-titles {
@@ -365,7 +368,6 @@ body {
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
 }
 
