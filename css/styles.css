@@ -163,12 +163,26 @@ body {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+}
+
+.overlay {
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url('../images/people-office-bg.jpg');
   background-color: var(--hero-bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-background {
+  background-color: var(--border-bg-color);
 }
 
 .main-title {
@@ -204,10 +218,6 @@ body {
 .button-studio:hover,
 .button-studio:focus {
   background-color: var(--pressed-state-color);
-}
-
-.hero-background {
-  background-color: var(--border-bg-color);
 }
 
 .list-of-benefits {
